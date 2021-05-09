@@ -1,4 +1,7 @@
 package com.ratelimit.ratelimit.services;
+
+import org.springframework.http.ResponseEntity;
+
 public interface UserService {
-	public String getUser(long userId);
+	public ResponseEntity<String> callAPI(long userId);
 }
